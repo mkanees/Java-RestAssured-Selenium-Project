@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sensiply Automation Suite">
+
+    <listeners>
+        <listener class-name="utilities.ExtentTestNGListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Regression Suite">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.SignupJSTest"/>
+            <class name="tests.JSe2e"/>
+            <class name="tests.SignupEmpTest"/>
+            <class name="tests.EmpOnboardingTest"/>
+            <class name="tests.JobCRUDTest"/>
+        </classes>
+    </test>
+
+</suite>
